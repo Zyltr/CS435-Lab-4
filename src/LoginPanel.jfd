@@ -1,0 +1,104 @@
+JFDML JFormDesigner: "7.0.0.0.82" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:20:p, par l {seq t {par t:::p {comp databaseLabel::t:::x, comp hostsLabel::t:::x, comp userLabel::t:::x, comp passwordLabel::t:::x, comp sslLabel::t:::x}, space s:::p, par l {seq {comp sslCheckBox:::p::p, space :::x}, seq t {par t {comp userTextField::t:::x, comp passwordField::l::447:x, comp hostsTextField::l::447:x, comp databaseComboBox::t::447:x}, space :p:20:p}}}, seq {comp loginLabel:::p::p, space :0:0:x}, seq l {comp loginButton:::::x, space :p:20:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:20:p, comp loginLabel:::p::p, space s:::p, par b {comp hostsLabel::b:p:25:p, comp hostsTextField::b:p::p}, space :::p, par b {comp databaseLabel::b:p:25:p, comp databaseComboBox::b:p::p}, space :::p, par t {comp userTextField:::p::p, comp userLabel:::p:25:p}, space :::p, par b {comp passwordField::b:p::p, comp passwordLabel::b:p:25:p}, space :::p, par l:::p {comp sslCheckBox:::::x, comp sslLabel:::::x}, space s::24:x, comp loginButton:::p::p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 560, 280 )
+			"preferredSize": new java.awt.Dimension( 560, 280 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "loginLabel"
+				"text": "Pomona Transit System"
+				"font": new java.awt.Font( "Lucida Grande", 0, 16 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "userLabel"
+				"text": "User"
+				"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "passwordLabel"
+				"text": "Password"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "sslLabel"
+				"text": "Use SSL"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userTextField"
+				"font": &Font1 new java.awt.Font( "Lucida Grande", 3, 12 )
+				"text": "root"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField"
+				"font": #Font1
+				"text": "MySQLDatabase"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "sslCheckBox"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginButton"
+				"text": "Login"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "hostsLabel"
+				"text": "Host"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "hostsTextField"
+				"font": #Font1
+				"text": "localhost:3306"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "databaseLabel"
+				"text": "Database"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "databaseComboBox"
+				"font": #Font1
+				"maximumRowCount": 1
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "CS435"
+					addElement( "CS435" )
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 560, 280 )
+		} )
+	}
+}

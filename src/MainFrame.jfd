@@ -1,0 +1,25 @@
+JFDML JFormDesigner: "7.0.0.0.92" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp tabbedPane:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp tabbedPane:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"name": "frame"
+			"title": "Pomona Transit System"
+			"minimumSize": new java.awt.Dimension( 600, 400 )
+			"defaultCloseOperation": 3
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane"
+				"preferredSize": new java.awt.Dimension( 586, 280 )
+				"minimumSize": new java.awt.Dimension( 586, 280 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 600, 400 )
+		} )
+	}
+}

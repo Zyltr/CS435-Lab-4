@@ -1,0 +1,418 @@
+JFDML JFormDesigner: "6.0.3.0.150" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::x, comp doneButton:::p::p, space :p:20:p}, seq t {space :::p, comp tabbedPane::::486:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :p:15:p, comp tabbedPane:::::x, space :::p, comp doneButton:::p::p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			"title": "Trip Offerings"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane"
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "tabbedPaneStateChanged", false ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:20:p, par l {seq {space :p:14:p, comp DTOLogLabel:::p::p, space :::x}, seq {par l {comp DTOLogScrollPane::l:::x, seq t {space :0:0:x, par l {comp DTOButton::t:p:425:p, seq t {comp DTOTripNumberLabel:::p::p, space s:::p, comp DTOTripOfferingScrollPane:::p:332:p}}}}, space :p:20:p}}}}"
+					"$verticalGroup": "par l {seq l {space :p:20:p, par l {comp DTOTripNumberLabel:::p::p, comp DTOTripOfferingScrollPane:::p:125:p}, space s:::p, comp DTOButton:::p::p, space s:::p, comp DTOLogLabel:::p::p, space s:::p, comp DTOLogScrollPane::::177:x, space :p:20:p}}"
+				} ) {
+					name: "deleteTripOfferingPanel"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "DTOTripNumberLabel"
+						"text": "Trip Offering"
+						"horizontalAlignment": 11
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "DTOButton"
+						"text": "Delete Trip Offering"
+						"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteTripOfferingButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "DTOLogLabel"
+						"text": "Log"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "DTOLogScrollPane"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "DTOLogTextArea"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "DTOTripOfferingScrollPane"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "DTOTripOfferingList"
+							"selectionMode": 0
+							"cellRenderer": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"selectionBackground": sfield java.awt.Color lightGray
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Delete Trip Offering"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:20:p, par l {seq {comp ATODateLabel:1::::x, space s:::p, comp ATODateMonthLabel:::p::p, space :::p, comp ATODateMonthSpinner:::p::p, space :::p, comp ATODateDayLabel:::p::p, space :::p, comp ATODateDaySpinner:::p::p, space :::p, comp ATODateYearLabel:::p::p, space :::p, comp ATODateYearComboBox:::p::p, space ::83:x}, seq {par l {comp ATOLogLabel:::p::p, par t {seq {comp ATOScheduledArrivalTimeLabel:1::::x, space s:::p, comp ATOArrivalTimeHourSpinner:::p::p, space :6:6:p, comp ATOArrivalTimeMinuteSpinner:::p::p, space :::p, comp ATOArrivalTimeAMRadioButton:::p::p, space :::p, comp ATOArrivalTimePMRadioButton:::p::p}, seq {comp ATOScheduledStartTimeLabel:1::::x, space s:::p, comp ATOStartTimeHourSpinner:::p::p, space :6:6:p, comp ATOStartTimeMinuteSpinner:::p::p, space :6:6:p, comp ATOStartTimeAMRadioButton:::p::p, space :6:6:p, comp ATOStartTimePMRadioButton:::p::p}}, comp addTripOfferingButton::l::444:x, seq l {comp ATOTripNumberLabel:1::::x, space u:::p, comp ATOTripNumberComboBox::::299:x}, seq l {par t {comp ATODriverName:1::::x, comp ATOBusIDLabel:1::::x}, space s:::p, par l {comp ATOBusIDComboBox::::293:x, comp ATODriverNameComboBox::::293:x}}, comp ATOLogScrollPane::l::444:x}, space :p:20:p}}}}"
+					"$verticalGroup": "par l {seq l {space :p:20:p, par b {comp ATOTripNumberLabel::b:p::p, comp ATOTripNumberComboBox::b:p::p}, space :::p, par b {comp ATODateLabel::b:p::p, comp ATODateMonthSpinner::b:p::p, comp ATODateMonthLabel::b:p::p, comp ATODateDaySpinner::b:p::p, comp ATODateDayLabel::b:p::p, comp ATODateYearComboBox::b:p::p, comp ATODateYearLabel::b:p::p}, space :::p, par l {par b:l {comp ATOStartTimeHourSpinner::b:p::p, comp ATOScheduledStartTimeLabel::b:p::p}, comp ATOStartTimeMinuteSpinner:::p::p, comp ATOStartTimeAMRadioButton:::p::p, comp ATOStartTimePMRadioButton:::p::p}, par l {par b:l {comp ATOArrivalTimeHourSpinner::b:p::p, comp ATOScheduledArrivalTimeLabel::b:p::p}, par b:l {comp ATOArrivalTimeMinuteSpinner::b:p::p, comp ATOArrivalTimeAMRadioButton::b:p::p, comp ATOArrivalTimePMRadioButton::b:p::p}}, space :::p, par b {comp ATODriverNameComboBox::b:p::p, comp ATODriverName::b:p::p}, space :::p, par b {comp ATOBusIDComboBox::b:p::p, comp ATOBusIDLabel::b:p::p}, space s:::p, comp addTripOfferingButton:::p::p, space s:::p, comp ATOLogLabel:::p::p, space s:::p, comp ATOLogScrollPane::::97:x, space :p:20:p}}"
+				} ) {
+					name: "addTripOfferingPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATOTripNumberLabel"
+						"text": "Trip Number"
+						"horizontalAlignment": 11
+						"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATODateLabel"
+						"text": "Date"
+						"horizontalAlignment": 11
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATOScheduledStartTimeLabel"
+						"text": "Scheduled Start Time"
+						"horizontalAlignment": 11
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATOScheduledArrivalTimeLabel"
+						"text": "Scheduled Arrival Time"
+						"horizontalAlignment": 11
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATODriverName"
+						"text": "Driver Name"
+						"horizontalAlignment": 11
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATOBusIDLabel"
+						"text": "Bus ID"
+						"horizontalAlignment": 11
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "ATOTripNumberComboBox"
+						"font": &Font1 new java.awt.Font( "Lucida Grande", 3, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "ATODriverNameComboBox"
+						"font": #Font1
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "ATOBusIDComboBox"
+						"font": #Font1
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "ATODateMonthSpinner"
+						"model": new javax.swing.SpinnerNumberModel( 1, 1, 12, 1 )
+						"font": #Font1
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "ATODateDaySpinner"
+						"model": new javax.swing.SpinnerNumberModel( 1, 1, 31, 1 )
+						"font": #Font1
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "ATODateYearComboBox"
+						"font": new java.awt.Font( "Lucida Grande", 3, 12 )
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "1970"
+							addElement( "1970" )
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATODateMonthLabel"
+						"text": "M"
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATODateDayLabel"
+						"text": "D"
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATODateYearLabel"
+						"text": "Y"
+						"font": #Font0
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "ATOStartTimeHourSpinner"
+						"model": &SpinnerNumberModel0 new javax.swing.SpinnerNumberModel( 12, 1, 12, 1 )
+						"font": &Font2 new java.awt.Font( "Lucida Grande", 3, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "ATOStartTimeMinuteSpinner"
+						"model": &SpinnerNumberModel1 new javax.swing.SpinnerNumberModel( 0, 0, 59, 1 )
+						"font": #Font2
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "ATOStartTimeAMRadioButton"
+						"text": "A.M"
+						"font": &Font3 new java.awt.Font( "Lucida Grande", 1, 12 )
+						"selected": true
+						"$buttonGroup": new FormReference( "ATOStartTimeGroup" )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "ATOStartTimePMRadioButton"
+						"text": "P.M"
+						"font": #Font3
+						"$buttonGroup": new FormReference( "ATOStartTimeGroup" )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "ATOArrivalTimeHourSpinner"
+						"model": #SpinnerNumberModel0
+						"font": #Font2
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "ATOArrivalTimeMinuteSpinner"
+						"model": #SpinnerNumberModel1
+						"font": #Font2
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "ATOArrivalTimeAMRadioButton"
+						"text": "A.M"
+						"font": #Font3
+						"selected": true
+						"$buttonGroup": new FormReference( "ATOArrivalTimeGroup" )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "ATOArrivalTimePMRadioButton"
+						"text": "P.M"
+						"font": #Font3
+						"$buttonGroup": new FormReference( "ATOArrivalTimeGroup" )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addTripOfferingButton"
+						"text": "Add Trip Offering"
+						"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addTripOfferingButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ATOLogLabel"
+						"text": "Log"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "ATOLogScrollPane"
+						"font": new java.awt.Font( "Lucida Grande", 3, 12 )
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "ATOLogTextArea"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Add Trip Offering"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {par t {seq l {space :p:21:p, par t {comp EDNewDriverLabel:::p::p, comp EDTripOfferingLabel:::p::p}, space s:::p, par l {comp EDComboBox::::351:x, comp EDTripOfferingScrollPane::::351:x}}, seq l {space :20:20:p, par t {comp changeDriverButton::l::0:x, comp EDLogScrollPane::l::444:x, seq l {comp EDLogLabel:::p::p, space ::424:x}}}}, space :p:20:p}}"
+					"$verticalGroup": "par l {seq l {space :p:20:p, par l {comp EDTripOfferingScrollPane:::p:125:p, comp EDTripOfferingLabel:::p::p}, space s:::p, par b {comp EDComboBox::b:p::p, comp EDNewDriverLabel::b:p::p}, space s:::p, comp changeDriverButton:::p::p, space s:::p, comp EDLogLabel:::p::p, space s:::p, comp EDLogScrollPane::::129:x, space :p:20:p}}"
+				} ) {
+					name: "editDrivePanel"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "EDTripOfferingLabel"
+						"text": "Trip Offering"
+						"font": &Font4 new java.awt.Font( "Lucida Grande", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "EDTripOfferingScrollPane"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "EDTripOfferingList"
+							"selectionMode": 0
+							"selectionBackground": sfield java.awt.Color lightGray
+							"cellRenderer": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "EDNewDriverLabel"
+						"text": "New Driver"
+						"font": &Font5 new java.awt.Font( "Lucida Grande", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "EDComboBox"
+						"font": &Font6 new java.awt.Font( "Lucida Grande", 3, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "changeDriverButton"
+						"text": "Change Driver"
+						"font": &Font7 new java.awt.Font( "Lucida Grande", 1, 12 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "changeDriverButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "EDLogLabel"
+						"text": "Log"
+						"font": &Font8 new java.awt.Font( "Lucida Grande", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "EDLogScrollPane"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "EDLogTextArea"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Edit Driver"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:20:p, par l {seq {comp EBLogLabel:::p::p, space :::x}, seq t {par t {comp EBLogTextArea::l::451:x, comp changeBusButton::l::451:x, seq t {par l {seq {space :p:9:p, comp EBNewDriverLabel:::p::p, space s:::x}, seq t {space :0:0:x, comp EBTripOfferingLabel:::p::p, space s:::p}}, par l:::p {comp EBScrollPane::::359:x, comp EBComboBox::::359:x}}}, space :p:20:p}}}}"
+					"$verticalGroup": "par l {seq t {space :p:20:p, par l {comp EBTripOfferingLabel:::p::p, comp EBScrollPane:::p:130:p}, space s:::p, par b {comp EBNewDriverLabel::b:p::p, comp EBComboBox::b:p::p}, space s:::p, comp changeBusButton:::p::p, space s:::p, comp EBLogLabel:::p::p, space :p:18:p, comp EBLogTextArea::::124:x, space :p:20:p}}"
+				} ) {
+					name: "editBusPanel"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "EBTripOfferingLabel"
+						"text": "Trip Offering"
+						"font": #Font4
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "EBNewDriverLabel"
+						"text": "New Bus ID"
+						"font": #Font5
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "EBComboBox"
+						"font": #Font6
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "changeBusButton"
+						"text": "Change Bus ID"
+						"font": #Font7
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "changeBusButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "EBLogLabel"
+						"text": "Log"
+						"font": #Font8
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+					} )
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "EBLogTextArea"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "EBScrollPane"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "EBTripOfferingList"
+							"selectionMode": 0
+							"selectionBackground": sfield java.awt.Color lightGray
+							"cellRenderer": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Edit Bus"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "Done"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "doneButtonActionPerformed", false ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 500, 560 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "ATOStartTimeGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 570 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "ATOArrivalTimeGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 624 )
+		} )
+	}
+}

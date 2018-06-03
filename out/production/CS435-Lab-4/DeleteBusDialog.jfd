@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "7.0.0.0.82" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:20:p, par l {seq {comp logLabel:::p::p, space ::418:x}, seq t {par t {comp logScrollPane::l::418:x, seq l {comp busIdLabel:::p::p, space s:::p, comp busIdComboBox::::364:x}, seq l {space :p:10:p, comp yearLabel:::p::p, space s:::p, comp yearDataLabel::::364:x}, seq t {comp modelLabel:::p::p, space :p:19:p, comp modelDataLabel::::364:x}, comp deleteBusButton::t::418:x}, space :p:20:p}}}, seq t {space ::362:x, comp doneButton:::p::p, space :p:19:p}}"
+			"$verticalGroup": "par l {seq l {space :p:18:p, par b {comp busIdLabel::b:p::p, comp busIdComboBox::b:p::p}, space u:::p, par b {comp modelLabel::b:p::p, comp modelDataLabel::b:p::p}, space :::p, par b {comp yearDataLabel::b:p::p, comp yearLabel::b:p::p}, space s:::p, comp deleteBusButton:::p::p, space s:::p, comp logLabel:::p::p, space s:::p, comp logScrollPane::::177:x, space s:::x, comp doneButton:::p::p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 460, 460 )
+			"name": "dialog"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "busIdLabel"
+				"text": "Bus ID"
+				"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "modelLabel"
+				"text": "Model"
+				"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "yearLabel"
+				"text": "Year"
+				"font": #Font0
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "busIdComboBox"
+				"font": &Font1 new java.awt.Font( "Lucida Grande", 3, 12 )
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "busIdComboBoxItemStateChanged", false ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteBusButton"
+				"text": "Delete Bus"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteBusButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logLabel"
+				"text": "Log"
+				"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "logScrollPane"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "logTextArea"
+					"font": #Font1
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "Done"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "doneButtonActionPerformed", false ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "modelDataLabel"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "yearDataLabel"
+				"text": "-"
+				"font": #Font1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 460, 460 )
+		} )
+	}
+}

@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "7.0.0.0.82" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:20:p, par t {comp findStopButton:::::x, seq {comp tripLabel:::p::p, space s:p::p, comp tripNumberComboBox:::::x}, comp scrollPane::t:::x}, space :p:17:p}, seq t {space ::361:x, comp doneButton:::p::p, space :p:20:p}}"
+			"$verticalGroup": "par l {seq l {space :p:20:p, par b {comp tripLabel::b:p::p, comp tripNumberComboBox::b:p::p}, space s:::p, comp findStopButton:::p::p, space s:::p, comp scrollPane::::297:x, space s:::p, comp doneButton:::p::p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 460, 500 )
+			"modal": true
+			"title": "Finding Stops"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tripLabel"
+				"text": "Trip Number"
+				"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "tripNumberComboBox"
+				"font": new java.awt.Font( "Lucida Grande", 3, 12 )
+				"maximumRowCount": 0
+				"selectedIndex": -1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "findStopButton"
+				"text": "Find Stops"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "findStopButtonActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane"
+				"border": new javax.swing.border.EtchedBorder( 1, null, null )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "stopList"
+					"selectionMode": 0
+					"visibleRowCount": 1
+					"cellRenderer": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"selectionBackground": new java.awt.Color( 204, 204, 204, 255 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "Done"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "doneButtonActionPerformed", false ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 460, 500 )
+		} )
+	}
+}

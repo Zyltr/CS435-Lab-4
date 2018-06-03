@@ -1,0 +1,116 @@
+JFDML JFormDesigner: "7.0.0.0.82" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:20:p, par l {seq l {space :p:60:p, par t {comp busIDLabel:::p::p, comp driverNameLabel:::p::p, comp dateLabel:::p::p}, space s:::p, par l {comp busID::t::224:x, comp date::::224:x, comp driverName::::224:x}}, seq l {par l {comp scheduledArrivalTimeLabel::l:p::p, comp scheduleStartTimeLabel::t:p::p, comp startLocationNameLabel::t:p::p, comp destinationNameLabel::t:p::p}, space s:::p, par l {comp scheduledStartTime::::224:x, comp startLocationName::::224:x, comp scheduledArrivalTime:::::x, comp destinationName::l:::x}}, comp bottomSeparator::t::375:x}, space :p:20:p}}"
+			"$verticalGroup": "par l {seq t {space :p:10:p, par b {comp driverName::b:p::p, comp driverNameLabel::b:p::p}, space :::p, par b {comp busID::b:p::p, comp busIDLabel::b:p::p}, space :::p, par b {comp date::b:p::p, comp dateLabel::b:p::p}, space :::p, par b {comp scheduledStartTime::b:p::p, comp scheduleStartTimeLabel::b:p::p}, space :::p, par b {comp startLocationName::b:p::p, comp startLocationNameLabel::b:p::p}, space :::p, par b {comp scheduledArrivalTimeLabel::b:p::p, comp scheduledArrivalTime::b:p::p}, space :::p, par b {comp destinationName::b:p::p, comp destinationNameLabel::b:p::p}, space :::p, comp bottomSeparator:::p::p, space ::1:x}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 415, 175 )
+			"preferredSize": new java.awt.Dimension( 415, 175 )
+			"background": sfield java.awt.Color white
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "startLocationNameLabel"
+				"text": "Start Location Name"
+				"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "destinationNameLabel"
+				"text": "Destination Name"
+				"font": #Font0
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "dateLabel"
+				"text": "Date"
+				"font": #Font0
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduleStartTimeLabel"
+				"text": "Scheduled Start Time"
+				"font": #Font0
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduledArrivalTimeLabel"
+				"text": "Scheduled Arrival Time"
+				"font": #Font0
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "driverNameLabel"
+				"text": "Driver Name"
+				"font": #Font0
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "busIDLabel"
+				"text": "Bus ID"
+				"font": #Font0
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "startLocationName"
+				"text": "-"
+				"font": &Font1 new java.awt.Font( "Lucida Grande", 3, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "destinationName"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "date"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduledStartTime"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduledArrivalTime"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "driverName"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "busID"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "bottomSeparator"
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 415, 170 )
+		} )
+	}
+}

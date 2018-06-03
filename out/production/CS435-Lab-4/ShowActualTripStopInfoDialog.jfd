@@ -1,0 +1,196 @@
+JFDML JFormDesigner: "7.0.0.0.92" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq l {space :20:20:p, par l {comp logScrollPane::t:::x, comp addButton::l:::x, seq t {par t:::p {comp actualStartTimeLabel:1::::x, comp stopNumberLabel:::p:116:p, comp numberPassengersInLabel:1:t:p::p, comp actualArrivalTimeLabel:1:t:p::p, comp numberPassengersOutLabel:1:t:p::p}, space s:::p, par l {comp stopNumberComboBox:::::x, seq {par l {seq l {comp actualStartTimeHourSpinner:::p::p, space :::p, comp actualStartTimeMinuteSpinner:::p::p, space :::p, comp actualStartAMRadioButton:::p::p, space :::p, comp actualStartPMRadioButton:::p::p}, seq {comp actualArrivalTimeHourSpinner:::p::p, space :::p, comp actualArrivalTimeMinuteSpinner:::p::p, space :::p, comp actualArrivalAMRadioButton:::p::p, space :6:6:p, comp actualArrivalPMRadioButton:::p::p}, comp passengersInSpinner:::p::p, comp passengersOutSpinner:::p::p}, space :0:60:x}}}, seq {comp logLabel:::p::p, space :0:0:x}, seq l {comp tripOfferingLabel:1::p::p, space s:::p, comp tripOfferingScrollPane:::::x}}}, seq {space ::361:x, comp doneButton:::p::p}}, space :p:20:p}}"
+			"$verticalGroup": "par l {seq l {space :p:21:p, par l {seq {comp tripOfferingLabel:::p::p, space :0:172:x}, comp tripOfferingScrollPane::::187:x}, space s:::p, par b {comp stopNumberLabel::b:p::p, comp stopNumberComboBox::b:p::p}, space :::p, par b {comp actualStartTimeLabel::b:p::p, comp actualStartTimeHourSpinner::b:p::p, comp actualStartTimeMinuteSpinner::b:p::p, comp actualStartAMRadioButton::b:p::p, comp actualStartPMRadioButton::b:p::p}, par t {par l {comp actualArrivalAMRadioButton:::p::p, comp actualArrivalPMRadioButton:::p::p}, par b {comp actualArrivalTimeLabel::b:p::p, comp actualArrivalTimeHourSpinner::b:p::p, comp actualArrivalTimeMinuteSpinner::b:p::p}}, space :::p, par b {comp numberPassengersInLabel::b:p::p, comp passengersInSpinner::b:p::p}, space :::p, par b {comp numberPassengersOutLabel::b:p::p, comp passengersOutSpinner::b:p::p}, space :p:24:p, comp addButton:::p::p, space s:::p, comp logLabel:::p::p, space s:::p, comp logScrollPane:::p:130:p, space s:::p, comp doneButton:::p::p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			"modal": true
+			"title": "Actual Trip Stop Info"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tripOfferingLabel"
+				"text": "Trip Offering"
+				"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stopNumberLabel"
+				"text": "Stop Number"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "actualStartTimeLabel"
+				"text": "Actual Start Time"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "actualArrivalTimeLabel"
+				"text": "Actual Arrival Time"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "numberPassengersInLabel"
+				"text": "# of Passengers In"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "numberPassengersOutLabel"
+				"text": "# of Passengers Out"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "tripOfferingScrollPane"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+				"horizontalScrollBarPolicy": 31
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "tripOfferingList"
+					"selectionMode": 0
+					"visibleRowCount": 6
+					"cellRenderer": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"selectionBackground": sfield java.awt.Color lightGray
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "stopNumberComboBox"
+				"font": new java.awt.Font( "Lucida Grande", 3, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "actualStartTimeHourSpinner"
+				"model": &SpinnerNumberModel0 new javax.swing.SpinnerNumberModel( 12, 1, 12, 1 )
+				"font": &Font1 new java.awt.Font( "Lucida Grande", 3, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "actualStartTimeMinuteSpinner"
+				"model": &SpinnerNumberModel1 new javax.swing.SpinnerNumberModel( 0, 0, 59, 1 )
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "actualArrivalTimeHourSpinner"
+				"model": #SpinnerNumberModel0
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "actualArrivalTimeMinuteSpinner"
+				"model": #SpinnerNumberModel1
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "passengersInSpinner"
+				"model": #SpinnerNumberModel1
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "passengersOutSpinner"
+				"model": #SpinnerNumberModel1
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addButton"
+				"text": "Add"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logLabel"
+				"text": "Log"
+				"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "logScrollPane"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "logTextArea"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneButton"
+				"text": "Done"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "doneButtonActionPerformed", false ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "actualStartAMRadioButton"
+				"text": "A.M"
+				"font": &Font2 new java.awt.Font( "Lucida Grande", 1, 12 )
+				"$buttonGroup": new FormReference( "actualStartTimeGroup" )
+				"selected": true
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "actualStartPMRadioButton"
+				"text": "P.M"
+				"font": #Font2
+				"$buttonGroup": new FormReference( "actualStartTimeGroup" )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "actualArrivalAMRadioButton"
+				"text": "A.M"
+				"font": #Font2
+				"$buttonGroup": new FormReference( "actualArrivalTimeGroup" )
+				"selected": true
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "actualArrivalPMRadioButton"
+				"text": "P.M"
+				"font": #Font2
+				"$buttonGroup": new FormReference( "actualArrivalTimeGroup" )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 460, 700 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "actualStartTimeGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 710 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "actualArrivalTimeGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 764 )
+		} )
+	}
+}

@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "7.0.0.0.92" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:20:p, par t {comp editTripOfferingButton::::520:x, comp displayScheduleButton::l::520:x, comp actualTripStopButton::t::520:x, comp displayStopButton::l::520:x, comp displayWeeklyScheduleButton::t::520:x, comp deleteBusButton::t::520:x, comp addBusButton::t::520:x, comp addDriverButton::t::520:x}, space :p:20:p}}"
+			"$verticalGroup": "par l {seq l {space :p:20:p, comp displayScheduleButton:::p::p, space :::p, comp editTripOfferingButton:::p::p, space :::p, comp displayStopButton:::p::p, space :::p, comp displayWeeklyScheduleButton:::p::p, space :::p, comp addDriverButton:::p::p, space :::p, comp addBusButton:::p::p, space :::p, comp deleteBusButton:::p::p, space :::p, comp actualTripStopButton:::p::p, space ::21:x}}"
+		} ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 560, 280 )
+			"minimumSize": new java.awt.Dimension( 560, 280 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayScheduleButton"
+				"text": "Display Schedules using a Location"
+				"font": &Font0 new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displaySchedulesButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayStopButton"
+				"text": "Display Stops"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayStopButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addDriverButton"
+				"text": "Add a Driver"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addDriverButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addBusButton"
+				"text": "Add a Bus"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addBusButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteBusButton"
+				"text": "Delete Bus"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteBusButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayWeeklyScheduleButton"
+				"text": "Display Week Schedules by Driver"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayWeeklyScheduleButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "actualTripStopButton"
+				"text": "Record Actual Trip Stop"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "actualTripStopButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "editTripOfferingButton"
+				"text": "Edit Trip Offering"
+				"font": new java.awt.Font( "Lucida Grande", 1, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editTripOfferingButtonActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 560, 315 )
+		} )
+	}
+}

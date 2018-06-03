@@ -1,0 +1,72 @@
+JFDML JFormDesigner: "7.0.0.0.92" Java: "9.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq t {space :p:10:p, par l {comp scheduledArrivalTimeLabel:3:t:p::p, comp scheduledStartTimeLabel:3:t:p:131:p}, space s:::p, par l {comp scheduledStartTime:4::p:109:p, comp scheduledArrivalTime:4::p:109:p}}, seq l {space :p:12:p, par l:::p {comp dateLabel::::131:x, comp tripNumberLabel::::131:x}, space s:::p, par l {comp tripNumber:4::p:109:p, comp date:4::p:109:p}}}, space :p:10:p}}"
+			"$verticalGroup": "par l {seq l {space :p:10:p, par b {comp tripNumberLabel:2:b:p::p, comp tripNumber::b:p::p}, space :::p, par b {comp dateLabel:2:b:p::p, comp date::b:p::p}, space :::p, par b {comp scheduledStartTimeLabel:2:b:p::p, comp scheduledStartTime::b:p::p}, space :::p, par b {comp scheduledArrivalTimeLabel:2:b:p::p, comp scheduledArrivalTime::b:p::p}, space ::12:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tripNumberLabel"
+				"text": "Trip Number"
+				"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "dateLabel"
+				"text": "Date"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduledStartTimeLabel"
+				"text": "Scheduled Start Time"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduledArrivalTimeLabel"
+				"text": "Scheduled Arrival Time"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tripNumber"
+				"text": "-"
+				"font": &Font1 new java.awt.Font( "Lucida Grande", 3, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "date"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduledStartTime"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "scheduledArrivalTime"
+				"text": "-"
+				"font": #Font1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 280, 100 )
+		} )
+	}
+}

@@ -1,0 +1,81 @@
+JFDML JFormDesigner: "6.0.3.0.150" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:20:p, par l {seq t {comp stopNumberLabel:::p:77:p, space s:::p, comp stopNumber:::::x}, seq l {par t {comp sequenceNumberLabel:::p::p, comp stopAddressLabel:::p::p, comp drivingTimeLabel::t:p::p}, space s:::p, par l {comp stopAddress:::::x, seq {par l {comp sequenceLabel:::p:280:p, comp drivingTime:::p:280:p}, space :0:0:x}}}, comp separator::t::0:x}, space :p:20:p}}"
+			"$verticalGroup": "par l {seq t {space :p:10:p, par l {comp stopNumberLabel:::p::p, comp stopNumber:::p::p}, space :::p, par b {comp stopAddressLabel::b:p::p, comp stopAddress::b:p::p}, space :::p, par b {comp sequenceNumberLabel::b:p::p, comp sequenceLabel::b:p::p}, space :::x, par b {comp drivingTime::b:p::p, comp drivingTimeLabel::b:p::p}, space :::p, comp separator:::p::p, space :p:18:p}}"
+		} ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 415, 110 )
+			"minimumSize": new java.awt.Dimension( 415, 110 )
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator"
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stopNumberLabel"
+				"text": "Stop Number"
+				"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stopAddressLabel"
+				"text": "Stop Address"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stopNumber"
+				"text": "-"
+				"font": &Font1 new java.awt.Font( "Lucida Grande", 3, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stopAddress"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "sequenceNumberLabel"
+				"text": "Seq Number"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "sequenceLabel"
+				"text": "-"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "drivingTimeLabel"
+				"text": "Driving Time"
+				"font": #Font0
+				"horizontalAlignment": 11
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "drivingTime"
+				"text": "-"
+				"font": #Font1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 415, 110 )
+		} )
+	}
+}
